@@ -24,21 +24,13 @@
             {
               "name": "routes",
               "description": "",
-              "directories": [
-                { "name": "api", "description": "", "directories": [] }
-              ]
+              "directories": [{ "name": "api", "description": "", "directories": [] }]
             }
           ]
         }
       ]
     },
     { "name": ".vscode", "description": "", "directories": [] },
-    {
-      "name": "src",
-      "description": "",
-      "directories": [
-        { "name": "utility", "description": "", "directories": [] }
-      ]
-    }
+    { "name": "src", "description": "", "directories": [{ "name": "utility", "description": "", "directories": [] }] }
   ]
 }
