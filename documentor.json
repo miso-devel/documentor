@@ -1,36 +1,29 @@
 {
   "name": "documentor",
-  "description": "",
-  "directories": [
+  "info": "aaaa",
+  "dir": [
     {
       "name": "examples",
-      "description": "",
-      "directories": [
+      "info": "",
+      "dir": [
         {
           "name": "fresh",
-          "description": "",
-          "directories": [
+          "info": "",
+          "dir": [
             {
               "name": "islands",
-              "description": "",
-              "directories": [
-                { "name": "a", "description": "", "directories": [] },
-                { "name": "b", "description": "", "directories": [] }
-              ]
+              "info": "",
+              "dir": [{ "name": "a", "info": "", "dir": [] }, { "name": "b", "info": "", "dir": [] }]
             },
-            { "name": "components", "description": "", "directories": [] },
-            { "name": "static", "description": "", "directories": [] },
-            { "name": ".vscode", "description": "", "directories": [] },
-            {
-              "name": "routes",
-              "description": "",
-              "directories": [{ "name": "api", "description": "", "directories": [] }]
-            }
+            { "name": "components", "info": "", "dir": [] },
+            { "name": "static", "info": "", "dir": [] },
+            { "name": ".vscode", "info": "", "dir": [] },
+            { "name": "routes", "info": "", "dir": [{ "name": "api", "info": "", "dir": [] }] }
           ]
         }
       ]
     },
-    { "name": ".vscode", "description": "", "directories": [] },
-    { "name": "src", "description": "", "directories": [{ "name": "utility", "description": "", "directories": [] }] }
+    { "name": ".vscode", "info": "", "dir": [] },
+    { "name": "src", "info": "", "dir": [{ "name": "utility", "info": "", "dir": [] }] }
   ]
 }
