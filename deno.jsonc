@@ -1,8 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run -A ./main.ts"
+    "init": "deno run -A ./src/main.ts init"
   },
-  "fmt": {
-    "lineWidth": 120
-  }
+  "fmt": { "lineWidth": 120 }
 }
