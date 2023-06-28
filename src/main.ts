@@ -1,7 +1,8 @@
-import { createConstructure } from './utility/init.ts';
+import { checkInfo } from './command/info.ts';
+import { createConstructure } from './command/init.ts';
 
 const cwd = Deno.cwd().split('/')[Deno.cwd().split('/').length - 1];
-type TScriptKind = 'init' | 'update';
+type TScriptKind = 'init' | 'update' | 'info';
 const scriptKind = Deno.args[0] as TScriptKind;
 
 switch (scriptKind) {
@@ -14,6 +15,10 @@ switch (scriptKind) {
 
   case 'update':
     console.log('update');
+    break;
+
+  case 'info':
+    await checkInfo();
     break;
 
   default:
