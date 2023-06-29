@@ -1,5 +1,6 @@
 import { checkInfo } from './command/info.ts';
 import { createConstructure } from './command/init.ts';
+import { totxt } from './utility/toTXT.ts';
 
 const cwd = Deno.cwd().split('/')[Deno.cwd().split('/').length - 1];
 type TScriptKind = 'init' | 'update' | 'info';
@@ -9,7 +10,8 @@ switch (scriptKind) {
   case 'init':
     {
       const result = await createConstructure({ name: cwd, entry: '.', isDir: true });
-      await Deno.writeTextFile('documentor.json', JSON.stringify(result));
+      console.log(totxt({ directory: result }));
+      await Deno.writeTextFile('documentor.txt', totxt({ directory: result }));
     }
     break;
 
