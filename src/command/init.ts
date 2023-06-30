@@ -10,7 +10,7 @@ export const createConstructure = async ({ name, entry, isDir }: TCreateConstruc
   if (!isDir) return { name: entry, info: '', dir: [] };
 
   for await (const dir of Deno.readDir(entry)) {
-    const path = entry + '/' + name;
+    const path = entry + '/' + dir.name;
 
     if (dir.isFile) {
       await createConstructure({ name: dir.name, entry: path, isDir: false });

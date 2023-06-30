@@ -1,5 +1,6 @@
 import { checkInfo } from './command/info.ts';
 import { createConstructure } from './command/init.ts';
+import { toJson } from './utility/toJSON.ts';
 import { totxt } from './utility/toTXT.ts';
 
 const cwd = Deno.cwd().split('/')[Deno.cwd().split('/').length - 1];
@@ -20,10 +21,18 @@ switch (scriptKind) {
     break;
 
   case 'info':
-    await checkInfo();
+    {
+      const test = await Deno.readFile('documentor.txt');
+      const dec = new TextDecoder('utf-8');
+      const txt = dec.decode(test);
+      console.log(toJson(txt));
+      //   await checkInfo();
+    }
+
     break;
 
   default:
-    console.log('please write args');
+    console.log('default');
+
     break;
 }
