@@ -25,7 +25,7 @@ switch (scriptKind) {
       const test = await Deno.readFile('documentor.txt');
       const dec = new TextDecoder('utf-8');
       const txt = dec.decode(test);
-      console.log(toJson(txt));
+      toJson(txt);
       //   await checkInfo();
     }
 

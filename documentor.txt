@@ -1,15 +1,15 @@
- |- documentor // プロジェクトのルートパスです
-　　　　|- examples // 例です
-   |- fresh // freshプロジェクトです
-    |- islands // islands
-     |- a //a
-     |- b //b
-    |- components //コンポーネント
-    |- static //　あああ
+ |- documentor // documentor!!
+  |- examples // examples!!
+   |- fresh // fresh!!
+    |- islands // islands!!
+     |- a // a!
+     |- b // b!
+    |- components //
+    |- static //
     |- .vscode //
-    |- routes //あああ
+    |- routes //
      |- api //
-　　　　|- .vscode //
+  |- .vscode //
   |- src //
    |- types //
    |- command //
